@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina Blog | Exploration in Tech & Design</title>
+    <meta name="description" content="A premium blogging experience with stunning visuals and interactive design.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Lumina<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#newsletter">Newsletter</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="btn-icon"><i data-lucide="search"></i></button>
+                <button class="btn-primary">Subscribe</button>
+                <button class="mobile-menu-btn"><i data-lucide="menu"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-bg"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <span class="badge">Featured Story</span>
+                    <h1>Designing for the <span class="gradient-text">Future</span> of Web.</h1>
+                    <p>Explore the intersection of cutting-edge technology, minimalist design, and the human experience.</p>
+                    <div class="hero-btns">
+                        <button class="btn-primary-large" onclick="window.location.href='post-detail.html'">Read Story</button>
+                        <button class="btn-secondary-large" onclick="window.location.href='articles.html'">All Articles</button>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse"></div>
+                <span>Scroll to explore</span>
+            </div>
+        </section>
+
+        <section id="articles" class="articles">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Latest <span class="gradient-text">Insights</span></h2>
+                    <p>Stay ahead of the curve with our weekly explorations into the digital frontier.</p>
+                </div>
+
+                <div class="articles-grid" id="blog-posts">
+                    <!-- Posts will be injected by JS -->
+                </div>
+
+                <div class="load-more">
+                    <button class="btn-secondary" onclick="window.location.href='articles.html'">View All Articles</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="newsletter" class="newsletter">
+            <div class="container">
+                <div class="newsletter-card">
+                    <div class="newsletter-content">
+                        <h3>Join the <span class="gradient-text">Circle</span>.</h3>
+                        <p>Weekly insights on design, tech, and creativity delivered straight to your inbox.</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Enter your email" required>
+                            <button type="submit">Join Now</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">Lumina<span>.</span></a>
+                    <p>Pushing the boundaries of digital storytelling through immersive design and thoughtful content.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigate</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="articles.html">Articles</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#">Privacy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect</h4>
+                    <div class="social-icons">
+                        <a href="#"><i data-lucide="twitter"></i></a>
+                        <a href="#"><i data-lucide="instagram"></i></a>
+                        <a href="#"><i data-lucide="github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Lumina. All rights reserved. Crafted with passion.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
